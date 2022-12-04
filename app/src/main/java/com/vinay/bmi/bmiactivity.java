@@ -12,9 +12,13 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-public class bmiactivity extends AppCompatActivity {
+
+
+public  class bmiactivity extends AppCompatActivity  {
 
     android.widget.Button mrecalculatebmi;
+    android.widget.Button mdiet;
+    android.widget.Button mexercise;
 
     TextView mbmidisplay,mbmicategory,mgender;
     Intent intent;
@@ -45,6 +49,8 @@ public class bmiactivity extends AppCompatActivity {
         mbackground=findViewById(R.id.contentlayout);
         mimageview=findViewById(R.id.imageview);
         mrecalculatebmi=findViewById(R.id.recalculatebmi);
+        mdiet=findViewById(R.id.diet);
+        mexercise=findViewById(R.id.exercise);
 
         height=intent.getStringExtra("height");
         weight= intent.getStringExtra("weight");
@@ -53,7 +59,7 @@ public class bmiactivity extends AppCompatActivity {
         intweight=Float.parseFloat(weight);
 
         intheight=intheight/100;
-
+         //height in meter
         intbmi=intweight/(intheight*intheight);
 
         mbmi=Float.toString(intbmi);
@@ -81,6 +87,8 @@ public class bmiactivity extends AppCompatActivity {
             mbmicategory.setText("Normal");
             mbackground.setBackgroundColor(Color.GREEN);
             mimageview.setImageResource(R.drawable.ok);
+            mdiet.setVisibility(View.INVISIBLE);
+            mexercise.setVisibility(View.INVISIBLE);
         }
         else if (intbmi<29.4 && intbmi>25)
         {
@@ -99,13 +107,32 @@ public class bmiactivity extends AppCompatActivity {
         mbmidisplay.setText(mbmi);
 
 
-        mrecalculatebmi.setOnClickListener(new View.OnClickListener() {
+         mrecalculatebmi.setOnClickListener(new View.OnClickListener() {
+             @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(bmiactivity.this, MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+            });
+
+        mdiet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(bmiactivity.this,MainActivity.class);
+                Intent intent = new Intent(bmiactivity.this, diet.class);
                 startActivity(intent);
                 finish();
             }
         });
+
+        mexercise.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(bmiactivity.this, exercise.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        }
     }
-}

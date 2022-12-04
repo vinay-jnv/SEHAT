@@ -8,11 +8,20 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="SEHAT"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BMI"
         tools:targetApi="31">
+        <activity
+            android:name=".aim"
+            android:exported="false" />
+        <activity
+            android:name=".exercise"
+            android:exported="false" />
+        <activity
+            android:name=".diet"
+            android:exported="false" />
         <activity
             android:name=".group"
             android:exported="false" />

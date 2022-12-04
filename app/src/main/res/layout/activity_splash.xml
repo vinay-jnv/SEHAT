@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="BMI CALCULATOR"
+        android:text="SEHAT: BMI CALCULATOR"
         android:textStyle="bold"
         android:textSize="20sp"
         android:textColor="@color/white"

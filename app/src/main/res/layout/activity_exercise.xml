@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".exercise">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:id="@+id/contentlayout"
+        android:background="@drawable/cardbackground"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="BEST EXERCISES"
+            android:id="@+id/ques"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="1. Cycling
+Cycling is a well-known workout that boosts fitness and can aid in weight loss and lowering overall BMI. Cycling is great for losing weight, but studies have also shown that regular cyclists are more physically fit overall, have higher insulin sensitivity, and have a lower risk of heart disease, cancer, and death than non-cyclists."
+            android:id="@+id/fruit"
+            android:layout_below="@+id/ques"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="2. RUNNING :-
+Running as well as jogging are excellent exercises for weight loss. Furthermore, research has shown that jogging and running can aid in the burning of dangerous fat accumulation, also referred to as belly fat. Our internal organs are surrounded by this sort of fat, which has been related to a number of chronic disorders."
+            android:id="@+id/run"
+            android:layout_below="@+id/fruit"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="3. WEIGHT TRAINING :-
+People who want lower their BMI, often choose to lift weights. Additionally, lifting weights can increase our resting metabolic rate (RMR), which measures how many calories our body burns when at rest."
+            android:id="@+id/gym"
+            android:layout_below="@+id/run"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold">
+
+        </TextView>
+        <android.widget.Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/recalculatebmi"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="Recalculate Your BMI"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/gym"
+            android:background="@drawable/buttonbackground"
+            android:textStyle="bold">
+        </android.widget.Button>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

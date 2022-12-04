@@ -12,9 +12,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/contentlayout"
-        android:layout_marginBottom="134dp"
-        android:padding="10dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="114dp"
+        android:padding="10dp"
         android:src="@drawable/ok">
 
     </ImageView>
@@ -84,5 +84,36 @@
         android:background="@drawable/buttonbackground"
         android:textStyle="bold">
     </android.widget.Button>
+
+    <android.widget.Button
+        android:id="@+id/diet"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/recalculatebmi"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="250dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/white"
+        android:text="Diet"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"></android.widget.Button>
+
+    <android.widget.Button
+        android:id="@+id/exercise"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/recalculatebmi"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/white"
+        android:text="Exercise"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"></android.widget.Button>
+
 
 </RelativeLayout>
